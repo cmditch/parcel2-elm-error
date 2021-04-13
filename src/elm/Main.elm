@@ -5,10 +5,9 @@ import Html
 import Init
 
 
-main : Program () Int ()
 main =
     Browser.sandbox
-        { view = \_ -> Html.div [] []
+        { view = \_ -> Html.div [] [ Html.text <| String.fromInt Init.foo ]
         , update = \_ model -> model
         , init = Init.foo
         }

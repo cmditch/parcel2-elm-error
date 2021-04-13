@@ -1,11 +1,17 @@
 {
   "name": "parcel2-elm-error",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "Coury Ditch <cmditch@gmail.com>",
+  "author": "Coury Ditch",
   "license": "MIT",
   "dependencies": {
-    "elm-format": "^0.8.5",
-    "parcel": "2.0.0-beta.2"
+    "elm-format": "0.8.5",
+    "parcel": "2.0.0-nightly.639"
+  },
+  "scripts": {
+   "hot": "yarn parcel serve src/index.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-elm": "2.0.0-nightly.2263",
+    "elm": "0.19.1-5"
   }
 }
